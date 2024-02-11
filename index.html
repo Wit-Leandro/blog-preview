@@ -16,7 +16,11 @@
       body{
         background-color: #f4d04e;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 13pt;       
+        font-size: 13pt;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;     
       }
       .container{
         background-color: #fff;
@@ -30,7 +34,7 @@
         box-shadow: 10px 10px 1px black ;
         padding-left: 20px;
         padding-top: 10px;
-        grid-template-rows: repeat(7);
+        grid-template-rows: repeat(8);
         grid-template-columns: 1fr;        
         gap: 10px;
       }
@@ -82,9 +86,10 @@
       }
 
       footer{
+        grid-row: 7 / 8;
         max-width: 375px;
         padding-top: 10px;
-      }   
+     }   
   </style>
 </head>
 <body>
@@ -99,10 +104,7 @@
       <img src="img/image-avatar.webp" alt="img avatar">
       <p><strong>Greg Hooper</strong></p>
     </div>
-  </div>
-  
-  <footer>
-    <div class="attribution">
+  <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://github.com/Wit-Leandro">Wit-Leandro</a>.
   </footer>
